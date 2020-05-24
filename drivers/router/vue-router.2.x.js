@@ -56,7 +56,6 @@ export default {
 
     routerGo: function (data) {
         var router = this.Vue.router;
-
-        (router.push || router.go).call(router, data).catch(function (err){});
+        router.push(data);
     }
 };
